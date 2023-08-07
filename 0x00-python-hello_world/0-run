@@ -4,12 +4,4 @@ if [ -z "$PYFILE" ]; then
   echo "Error: The PYFILE environment variable is not set."
   exit 1
 fi
-
-# Check if the Python file exists
-if [ ! -f "$PYFILE" ]; then
-  echo "Error: The specified Python file '$PYFILE' does not exist."
-  exit 1
-fi
-
-# Run the Python script
 python3 "$PYFILE"
