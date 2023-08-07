@@ -10,8 +10,3 @@ fi
 tmpfile=$(mktemp)
 echo "$PYCODE" > "$tmpfile"
 
-# Run the Python script
-python3 "$tmpfile"
-
-# Delete the temporary Python file
-rm "$tmpfile"
