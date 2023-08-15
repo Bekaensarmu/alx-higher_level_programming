@@ -1,8 +1,10 @@
-
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """Print the value of variable a from variable_load_5."""
-    from variable_load_5 import a
+    """Print the addition of all arguments."""
+    import sys
 
-    print(a)
+    total = 0
+    for i in range(len(sys.argv) - 1):
+        total += int(sys.argv[i + 1])
+    print("{}".format(total))
